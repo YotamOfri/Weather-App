@@ -72,6 +72,7 @@ async function GetWeather(url, city) {
         } else {
           celsius_btn.classList.remove("btn-active");
           TempF();
+          // SS
         }
       }
     });
