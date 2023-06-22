@@ -50,11 +50,11 @@ async function GetWeather(url, city) {
   } ${my_date.getHours()}:${my_date.getMinutes()}`;
   // background Chnage
   if (data.current.temp_c > 28) {
-    card.style.backgroundImage = "url('/resources/hot.jpg')";
+    card.style.backgroundImage = "url('../resources/hot.jpg')";
   } else if (data.current.temp_c > 23) {
-    card.style.backgroundImage = "url('/resources/chill.jpg')";
+    card.style.backgroundImage = "url('../resources/chill.jpg')";
   } else {
-    card.style.backgroundImage = "url('/resources/cold.jpg')";
+    card.style.backgroundImage = "url('../resources/cold.jpg')";
   }
   // Buttons Change
   const celsius_btn = template_content.querySelector(".celsius");
