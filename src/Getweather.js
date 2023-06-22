@@ -50,11 +50,14 @@ async function GetWeather(url, city) {
   } ${my_date.getHours()}:${my_date.getMinutes()}`;
   // background Chnage
   if (data.current.temp_c > 28) {
-    card.style.backgroundImage = "url('../resources/hot.jpg')";
+    card.style.backgroundImage =
+      "url('https://images.unsplash.com/photo-1524594081293-190a2fe0baae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1752&q=80')";
   } else if (data.current.temp_c > 23) {
-    card.style.backgroundImage = "url('../resources/chill.jpg')";
+    card.style.backgroundImage =
+      "url('https://images.unsplash.com/photo-1543312069-b53e8c306088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80')";
   } else {
-    card.style.backgroundImage = "url('../resources/cold.jpg')";
+    card.style.backgroundImage =
+      "url('https://images.unsplash.com/photo-1477468572316-36979010099d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2664&q=80')";
   }
   // Buttons Change
   const celsius_btn = template_content.querySelector(".celsius");
